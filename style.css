@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.location {
+    display: flex;
+}
+
+.timezone {
+    margin: 1rem;
+}
+
+.icon {
+    margin: 1rem;
+}
+
+.weather {
+    display: grid;
+    grid-template-areas: "a b"
+        "c c";
+}
+
+.main-weather {
+    grid-area: a;
+    margin: 1rem;
+
+}
+
+.temperature {
+    grid-area: b;
+    margin: 1rem;
+
+}
+
+.description {
+    grid-area: c;
+    margin: 1rem;
+
+}
