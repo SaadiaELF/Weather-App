@@ -8,6 +8,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
 }
 
 .location {
@@ -17,7 +18,9 @@ body {
 
 .timezone {
     margin: 1rem;
-    align-self:center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    align-self: center;
 }
 
 .icon {
@@ -38,17 +41,19 @@ body {
 .main-weather {
     grid-area: a;
     margin: 1rem;
-
+    font-size: 1.4rem;
 }
 
 .temperature {
     grid-area: b;
     margin: 1rem;
-
+    font-size: 1.4rem;
 }
 
 .description {
     grid-area: c;
     margin: 1rem;
-
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    text-align: center;
 }
