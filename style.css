@@ -12,14 +12,21 @@ body {
 
 .location {
     display: flex;
+    height: 100px
 }
 
 .timezone {
     margin: 1rem;
+    align-self:center;
 }
 
 .icon {
+    height: auto;
+    width: 100px;
     margin: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .weather {
