@@ -25,7 +25,7 @@ function getWeather(lat, lon, city) {
       let weather = data.weather[0].main;
       let weatherIcon = data.weather[0].icon;
       let weatherInfo = data.weather[0].description;
-      let temp = data.main.temp;
+      let temp = (data.main.temp -273.15).toFixed();
       displayWeather(city, weather, weatherIcon, weatherInfo, temp);
     });
 }
@@ -35,5 +35,5 @@ function displayWeather(city, weather, weatherIcon, weatherInfo, temp) {
   icon.style.backgroundImage = `url(http://openweathermap.org/img/wn/${weatherIcon}@2x.png)`;
   mainWeather.innerHTML = weather;
   description.innerHTML = weatherInfo;
-  temperature.innerHTML = temp;
+  temperature.innerHTML = temp + "°C";
 }
